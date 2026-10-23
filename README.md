@@ -26,6 +26,16 @@ A reusable AI base for **spec-driven development** with [Claude Code](https://do
    ```
 6. `/plugin install sdd-core@ai-base`
 
+> **VS Code extension only?** `/plugin` isn't available in the extension's chat. Use the CLI that ships inside the extension, from a terminal in the project folder:
+> ```powershell
+> $claude = (Get-ChildItem "$env:USERPROFILE\.vscode\extensions\anthropic.claude-code-*\resources\native-binary\claude.exe" | Sort-Object FullName | Select-Object -Last 1).FullName
+> & $claude plugin marketplace add Tobote/claude-ai-base
+> & $claude plugin install sdd-core@ai-base --scope project      # repeat for stack-dotnet, stack-node, event-driven
+> & $claude plugin list
+> & $claude plugin marketplace update ai-base                     # after pushing base changes
+> ```
+> Then reload the VS Code window (Ctrl+Shift+P → "Developer: Reload Window").
+
 ## New project (about 5 minutes)
 1. Create the folder and open it in Claude Code.
 2. Install the stack plugins you need: `/plugin install stack-dotnet@ai-base` (and so on).
