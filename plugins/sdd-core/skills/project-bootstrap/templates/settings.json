@@ -3,7 +3,7 @@
     "ai-base": {
       "source": {
         "source": "github",
-        "repo": "<github-user>/claude-ai-base"
+        "repo": "Tobote/claude-ai-base"
       }
     }
   },

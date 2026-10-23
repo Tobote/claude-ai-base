@@ -20,7 +20,7 @@ A reusable AI base for **spec-driven development** with [Claude Code](https://do
 4. Spec Kit CLI: `uv tool install --python 3.12 specify-cli --from git+https://github.com/github/spec-kit.git`
 5. Add this marketplace in Claude Code:
    ```
-   /plugin marketplace add <github-user>/claude-ai-base
+   /plugin marketplace add Tobote/claude-ai-base
    # or, while it is only local:
    /plugin marketplace add C:\Users\celio.pimentel\Desktop\Estudos\Pessoal\claude-ai-base
    ```
