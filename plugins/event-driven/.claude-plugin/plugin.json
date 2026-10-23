@@ -1,0 +1,8 @@
+{
+  "name": "event-driven",
+  "version": "0.1.0",
+  "description": "Messaging patterns (outbox, idempotency, retries/DLQ, saga), RabbitMQ, Kafka, Redis and Docker Compose local environments",
+  "author": {
+    "name": "Célio Pimentel"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "stack-node",
+  "version": "0.1.0",
+  "description": "Node.js/TypeScript conventions and testing",
+  "author": {
+    "name": "Célio Pimentel"
+  }
+}

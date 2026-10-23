@@ -1,0 +1,8 @@
+{
+  "name": "sdd-core",
+  "version": "0.1.0",
+  "description": "Stack-agnostic SDD workflow support: project bootstrap, constitution baseline, spec quality, ADRs, git workflow, reviewer agents and guardrail hooks",
+  "author": {
+    "name": "Célio Pimentel"
+  }
+}

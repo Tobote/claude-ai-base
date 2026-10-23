@@ -1,0 +1,32 @@
+{
+  "name": "ai-base",
+  "owner": {
+    "name": "Célio Pimentel"
+  },
+  "metadata": {
+    "description": "Reusable AI base for spec-driven development with Claude Code and GitHub Spec Kit",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "sdd-core",
+      "source": "./plugins/sdd-core",
+      "description": "Stack-agnostic SDD workflow support: project bootstrap, constitution baseline, spec quality, ADRs, git workflow, reviewer agents and guardrail hooks"
+    },
+    {
+      "name": "stack-dotnet",
+      "source": "./plugins/stack-dotnet",
+      "description": "C#/.NET conventions, EF Core + PostgreSQL, xUnit testing"
+    },
+    {
+      "name": "stack-node",
+      "source": "./plugins/stack-node",
+      "description": "Node.js/TypeScript conventions and testing"
+    },
+    {
+      "name": "event-driven",
+      "source": "./plugins/event-driven",
+      "description": "Messaging patterns (outbox, idempotency, retries/DLQ, saga), RabbitMQ, Kafka, Redis and Docker Compose local environments"
+    }
+  ]
+}

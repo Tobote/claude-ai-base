@@ -1,0 +1,8 @@
+{
+  "name": "stack-dotnet",
+  "version": "0.1.0",
+  "description": "C#/.NET conventions, EF Core + PostgreSQL, xUnit testing",
+  "author": {
+    "name": "Célio Pimentel"
+  }
+}
