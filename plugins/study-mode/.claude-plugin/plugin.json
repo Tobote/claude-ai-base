@@ -1,0 +1,8 @@
+{
+  "name": "study-mode",
+  "version": "0.1.0",
+  "description": "Learn-by-building mode: Claude tutors, coaches decisions, quizzes and reviews while the learner writes the code",
+  "author": {
+    "name": "Célio Pimentel"
+  }
+}

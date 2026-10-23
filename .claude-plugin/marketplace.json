@@ -27,6 +27,11 @@
       "name": "event-driven",
       "source": "./plugins/event-driven",
       "description": "Messaging patterns (outbox, idempotency, retries/DLQ, saga), RabbitMQ, Kafka, Redis and Docker Compose local environments"
+    },
+    {
+      "name": "study-mode",
+      "source": "./plugins/study-mode",
+      "description": "Learn-by-building mode: Claude tutors, coaches decisions, quizzes and reviews while the learner writes the code"
     }
   ]
 }

@@ -12,6 +12,7 @@ A reusable AI base for **spec-driven development** with [Claude Code](https://do
 | `stack-dotnet` | `dotnet-conventions`, `efcore-postgres`, `xunit-testing` |
 | `stack-node` | `node-ts-conventions`, `node-testing` |
 | `event-driven` | `messaging-patterns`, `rabbitmq`, `kafka`, `redis-usage`, `docker-compose-local-env` |
+| `study-mode` (study projects) | Skills: `tutor-mode` (you write the code; Claude teaches with a hint ladder), `decision-coach`, `concept-check`, `learning-journal`. Agent: `mentor-reviewer` (reviews with questions and hints, never fixes). Declare study mode and a learner profile in the project's CLAUDE.md |
 
 ## One-time machine setup
 1. Claude Code (CLI, or the VS Code extension).
