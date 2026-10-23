@@ -16,13 +16,13 @@ Set up the current folder so it follows the spec-driven workflow from the `ai-ba
 ## 2. Preconditions
 - Check `git --version` and `specify --version`.
 - If `specify` is missing, tell the user to install it once per machine and stop until it is installed:
-  `uv tool install specify-cli --from git+https://github.com/github/spec-kit.git`
-  (uv: `winget install astral-sh.uv` on Windows, or see https://docs.astral.sh/uv/).
+  `uv tool install --python 3.12 specify-cli --from git+https://github.com/github/spec-kit.git`
+  (uv: `winget install astral-sh.uv` on Windows, or see https://docs.astral.sh/uv/). The `--python 3.12` pin avoids source builds of `pyyaml`, which need MSVC on Windows.
 - Don't overwrite an existing `CLAUDE.md`, `.claude/settings.json` or `.specify/`. Merge them, or ask the user first.
 
 ## 3. Steps
 1. Run `git init` if the folder isn't a repo yet. Then copy `templates/gitignore` to `.gitignore`, or merge it into the existing file.
-2. `specify init --here --ai claude --script <ps|sh>`. This creates `.specify/` and `.claude/commands/speckit.*.md`.
+2. `specify init --here --force --non-interactive --integration claude --script <ps|sh>`. This creates `.specify/` (templates, scripts, `memory/constitution.md`) and the Spec Kit skills in `.claude/skills/speckit-*/` (`/speckit-constitution`, `/speckit-specify`, …). `--force` is needed because the folder isn't empty after step 1. Add `--ignore-agent-tools` if the `claude` CLI isn't on PATH (for example when only the VS Code extension is installed).
 3. Write `.claude/settings.json` from `templates/settings.json`:
    - set the `ai-base` marketplace source (`github` + `repo`, or `directory` + `path`);
    - in `enabledPlugins`, keep only the plugins the user chose.
@@ -33,6 +33,6 @@ Set up the current folder so it follows the spec-driven workflow from the `ai-ba
 
 ## 4. Hand-off
 Tell the user the next steps:
-1. Restart Claude Code (or run `/plugin`) so the plugins and `/speckit.*` commands load.
-2. Run `/speckit.constitution` to make the principles project-specific.
-3. Start the first feature with `/speckit.specify <feature description>`.
+1. Restart Claude Code (or run `/plugin`) so the plugins and `/speckit-*` commands load.
+2. Run `/speckit-constitution` to make the principles project-specific.
+3. Start the first feature with `/speckit-specify <feature description>`.

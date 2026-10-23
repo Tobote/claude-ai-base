@@ -1,6 +1,6 @@
 ---
 name: code-reviewer
-description: Reviews an implementation (current branch diff vs main) against its spec, tasks and the constitution - correctness, test coverage of acceptance criteria, security, and stack conventions. Use after /speckit.implement or before opening a PR.
+description: Reviews an implementation (current branch diff vs main) against its spec, tasks and the constitution - correctness, test coverage of acceptance criteria, security, and stack conventions. Use after /speckit-implement or before opening a PR.
 tools: Read, Grep, Glob, Bash
 ---
 

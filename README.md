@@ -2,7 +2,7 @@
 
 A reusable AI base for **spec-driven development** with [Claude Code](https://docs.claude.com/en/docs/claude-code) and [GitHub Spec Kit](https://github.com/github/spec-kit), packaged as a Claude Code plugin marketplace named **`ai-base`**.
 
-- **Spec Kit** supplies the workflow: `/speckit.constitution → specify → clarify → plan → tasks → analyze → implement`.
+- **Spec Kit** supplies the workflow: `/speckit-constitution → specify → clarify → plan → tasks → analyze → implement`.
 - **This repo** supplies the knowledge and guardrails reused across projects: skills, agents and hooks.
 
 ## Plugins
@@ -17,7 +17,7 @@ A reusable AI base for **spec-driven development** with [Claude Code](https://do
 1. Claude Code (CLI, or the VS Code extension).
 2. Node.js. The guardrail hook runs on Node.
 3. [uv](https://docs.astral.sh/uv/): `winget install astral-sh.uv`
-4. Spec Kit CLI: `uv tool install specify-cli --from git+https://github.com/github/spec-kit.git`
+4. Spec Kit CLI: `uv tool install --python 3.12 specify-cli --from git+https://github.com/github/spec-kit.git`
 5. Add this marketplace in Claude Code:
    ```
    /plugin marketplace add <github-user>/claude-ai-base
@@ -30,11 +30,11 @@ A reusable AI base for **spec-driven development** with [Claude Code](https://do
 1. Create the folder and open it in Claude Code.
 2. Install the stack plugins you need: `/plugin install stack-dotnet@ai-base` (and so on).
 3. Ask Claude: **"bootstrap this project with the AI base"**. The `project-bootstrap` skill then:
-   - runs `git init` and `specify init --here --ai claude --script ps`;
+   - runs `git init` and `specify init --here --non-interactive --integration claude --script ps`;
    - writes `.claude/settings.json` (marketplace + `enabledPlugins`, so teammates get the same plugins), `CLAUDE.md` and `.gitignore`;
    - seeds `.specify/memory/constitution.md` with the baseline principles.
-4. Restart Claude Code, then run `/speckit.constitution` to add the project-specific principles.
-5. Per feature: `/speckit.specify` → `/speckit.clarify` → `/speckit.plan` (then ask the `architect` agent for a review) → `/speckit.tasks` → `/speckit.analyze` → `/speckit.implement` → `code-reviewer` agent → PR.
+4. Restart Claude Code, then run `/speckit-constitution` to add the project-specific principles.
+5. Per feature: `/speckit-specify` → `/speckit-clarify` → `/speckit-plan` (then ask the `architect` agent for a review) → `/speckit-tasks` → `/speckit-analyze` → `/speckit-implement` → `code-reviewer` agent → PR.
 
 ## Improving the base (the feedback loop)
 After each feature or project, turn repeated corrections into base improvements:

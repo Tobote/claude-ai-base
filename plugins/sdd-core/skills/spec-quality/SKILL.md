@@ -1,11 +1,11 @@
 ---
 name: spec-quality
-description: Quality bar for Spec Kit specs - user stories, testable acceptance criteria (Given/When/Then), edge cases, non-functional requirements and success criteria. Use when writing or refining spec.md (during /speckit.specify or /speckit.clarify), or when the user asks whether a spec is good enough.
+description: Quality bar for Spec Kit specs - user stories, testable acceptance criteria (Given/When/Then), edge cases, non-functional requirements and success criteria. Use when writing or refining spec.md (during /speckit-specify or /speckit-clarify), or when the user asks whether a spec is good enough.
 ---
 
 # Spec quality bar
 
-A spec in `specs/NNN-feature/spec.md` is ready for `/speckit.plan` only when it passes every check below.
+A spec in `specs/NNN-feature/spec.md` is ready for `/speckit-plan` only when it passes every check below.
 
 ## What and why, never how
 - No frameworks, databases, class names or endpoints. Those belong in plan.md.
@@ -31,7 +31,7 @@ A spec in `specs/NNN-feature/spec.md` is ready for `/speckit.plan` only when it 
 
 ## Ambiguity
 - Mark every unknown as `[NEEDS CLARIFICATION: question]`. Never silently guess.
-- `/speckit.clarify` must resolve all of them before planning.
+- `/speckit-clarify` must resolve all of them before planning.
 
 ## Red flags to call out
 Vague adjectives (fast, simple, robust, user-friendly), "etc.", unbounded lists, implied features with no story, criteria that test implementation instead of behaviour.

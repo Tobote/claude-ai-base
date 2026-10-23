@@ -7,7 +7,7 @@ description: Git conventions for spec-driven projects - one branch per spec (NNN
 
 ## Branches
 - `main` is always releasable.
-- One branch per spec, named like the spec folder: `001-place-order`. `/speckit.specify` creates it automatically.
+- One branch per spec, named like the spec folder: `001-place-order`. `/speckit-specify` creates it automatically.
 - Use `chore/<topic>` or `fix/<topic>` for work outside a spec.
 
 ## Commits
@@ -35,4 +35,4 @@ docker compose up -d && <test command>
 - docs/adr/NNNN-...
 ```
 
-Before opening a PR: all tests pass, `/speckit.analyze` is clean, and the `code-reviewer` agent review is addressed.
+Before opening a PR: all tests pass, `/speckit-analyze` is clean, and the `code-reviewer` agent review is addressed.

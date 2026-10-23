@@ -1,6 +1,6 @@
 ---
 name: test-engineer
-description: Writes failing automated tests from a spec's acceptance criteria before implementation (test-first). Use during /speckit.implement for the test tasks of a user story, or when acceptance criteria lack tests.
+description: Writes failing automated tests from a spec's acceptance criteria before implementation (test-first). Use during /speckit-implement for the test tasks of a user story, or when acceptance criteria lack tests.
 tools: Read, Grep, Glob, Edit, Write, Bash
 ---
 

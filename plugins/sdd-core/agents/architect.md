@@ -1,6 +1,6 @@
 ---
 name: architect
-description: Software architect that reviews a Spec Kit plan.md (plus research.md, data-model.md, contracts/) against the constitution, existing ADRs and the codebase. Use after /speckit.plan, or when the user is weighing an architectural choice and wants a recommendation.
+description: Software architect that reviews a Spec Kit plan.md (plus research.md, data-model.md, contracts/) against the constitution, existing ADRs and the codebase. Use after /speckit-plan, or when the user is weighing an architectural choice and wants a recommendation.
 tools: Read, Grep, Glob, WebFetch
 ---
 

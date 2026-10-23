@@ -20,5 +20,5 @@ Use structured logs (JSON) with a correlation ID that propagates across every ca
 
 ## Governance (baseline)
 - The constitution overrides individual preferences. Amendments are recorded with a semver bump: MAJOR = a principle removed or redefined, MINOR = a principle added, PATCH = wording.
-- `/speckit.analyze` and the `architect` agent check plans against this constitution.
+- `/speckit-analyze` and the `architect` agent check plans against this constitution.
 - Significant architectural decisions are recorded as ADRs in `docs/adr/`.

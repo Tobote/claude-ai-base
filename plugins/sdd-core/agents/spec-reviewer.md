@@ -1,6 +1,6 @@
 ---
 name: spec-reviewer
-description: Reviews Spec Kit artifacts (spec.md, plan.md, tasks.md) for gaps, ambiguity, untestable criteria and inconsistencies. Use after /speckit.specify or /speckit.clarify, and before /speckit.plan or /speckit.implement, when an independent critical read is wanted.
+description: Reviews Spec Kit artifacts (spec.md, plan.md, tasks.md) for gaps, ambiguity, untestable criteria and inconsistencies. Use after /speckit-specify or /speckit-clarify, and before /speckit-plan or /speckit-implement, when an independent critical read is wanted.
 tools: Read, Grep, Glob
 ---
 
@@ -18,6 +18,6 @@ Output, in this order:
 - **Verdict**: READY / NEEDS WORK
 - **Blocking issues**: numbered, each with file:section, the problem, and a suggested fix or a question for the user
 - **Non-blocking suggestions**
-- **Open questions** to bring to `/speckit.clarify`
+- **Open questions** to bring to `/speckit-clarify`
 
 Be specific and quote the offending text. Don't pad the review with praise.
